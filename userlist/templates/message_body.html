@@ -26,8 +26,9 @@
       <div class="jumbotron">
         <h1 class="display-3">{{ wish }}</h1>
         <p class="lead" contenteditable="true" spellcheckker="false">{{ message }}</p>
+          {% if link %}
         <p class="lead" contenteditable="true" spellcheckker="false"><a href="{{ link }}">{{ link }}</a></p>
-
+            {% endif %}
       </div>
 
       
