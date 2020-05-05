@@ -103,7 +103,7 @@ def enlist(request):
 
 
         else:
-            user_entry = UserList(name=name, email=email, refer_code=referer_code, own_code=own_code, position=3)
+            user_entry = UserList(name=name, email=email, refer_code=referer_code, own_code=own_code, position=99)
             try:
                 user_entry.save()
                 initiate_email(email, int(request.META['SERVER_PORT']), own_code)
